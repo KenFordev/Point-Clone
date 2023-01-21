@@ -1,0 +1,10 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  --color-red: #b00;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

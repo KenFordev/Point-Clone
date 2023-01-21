@@ -1,0 +1,625 @@
+.nav__bg {
+    background-color: #000;
+    height: auto;
+}
+.nav__container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.nav__left {
+    display: flex;
+    align-items: center;
+}
+.nav__logo {
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    background-color: #b00;
+}
+.nav__logo a img {
+    width: 100%;
+    max-width: 210px;
+}
+.nav__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    height: 100%;
+}
+.nav__menu .nav__menu-con {
+    list-style: none;
+    margin-right: .5rem;
+    display: flex;
+    align-items: center;
+    text-emphasis-color: center;
+    height: 100%;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+.nav__menu .nav__menu-item {
+    height: 100%;
+    position: relative;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+    color: #999;
+    font-weight: bold;
+    transition: .4s ease;
+    display: flex;
+    align-items: center;
+}
+.nav__menu .nav__menu-item:hover {
+    color: #b00!important;
+}
+.nav__menu .nav__menu-item::after {
+    content: "";
+    position: absolute;
+    background-color: #b00;
+    height: 8px;
+    width: 0;
+    left: 0;
+    bottom: 0;
+}
+.nav__menu .nav__menu-item:hover::after {
+    width: 100%;
+}
+/* ================================ Hover and Open Dropdown =========================== */
+.main__drop-1:hover .on__menu {
+    display: flex!important;
+}
+.main__drop-2:hover .on__menu {
+    display: flex!important;
+}
+.main__drop-3:hover .on__menu {
+    display: flex!important;
+}
+.main__drop-4:hover .on__menu {
+    display: flex!important;
+}
+.on__menu {
+    display: none!important;
+    z-index: 1;
+    width: 100%;
+    left: 0;
+    top: 77px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    list-style-type: none;
+    align-items: center;
+}
+.on__menu li a {
+    text-decoration: none;
+    gap: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #444;
+    background-color: #222;
+    border-radius: 4px;
+    width: 108px;
+    height: 108px;
+    font-size: 14px;
+    color: rgb(114, 114, 114);
+    transition: .2s ease;
+}
+.on__menu .fonts-more {
+    font-size: .66rem;
+}
+.on__menu li a:hover {
+    background-color: #b00;
+    color: #fff;
+    border: 1px solid #b00;
+}
+.on__menu .discord__color:hover {
+    background-color: rgb(72, 74, 226);
+    border: 1px solid rgb(72, 74, 226);
+}
+.on__menu .facebook__color:hover {
+    background-color: rgb(19, 20, 92);
+    border: 1px solid rgb(19, 20, 92);
+}
+.on__menu .instar__color:hover {
+    background-color: rgb(204, 26, 103);
+    border: 1px solid rgb(204, 26, 103);
+}
+/* ================================ Hover and Open Dropdown =========================== */
+.nav__right {
+    display: flex;
+    padding: .3rem .5rem;
+    gap: 1rem;
+    color: #fff;
+}
+/* ==================== DROPDOWN ===================== */
+.nav__dropdown {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    padding: 1rem;
+    border: 1px solid #555555;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: .3rem 0;
+    position: relative;
+}
+.nav__dropdown p {
+    margin-bottom: 0;
+    font-size: 12px;
+}
+.nav__drop-item {
+    position: absolute;
+    top: 57px;
+    left: 0;
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+    background: #000;
+    font-size: 12px;
+    border-radius: 1px;
+    transition: .4s ease-out;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.nav__drop-item li {
+    list-style: none;
+    transition: .3s ease-out;
+}
+.nav__drop-item li:hover {
+    background-color: #b00;
+}
+.nav__drop-item li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+/* ============== Active Class ============== */
+.nav__drop-item.active {
+    height: 110px;
+    z-index: 3;
+    transition: .5s ease;
+}
+/* ============== Active Class ============== */
+/* ==================== DROPDOWN ===================== */
+.regis {
+    min-width: 200px;
+}
+.nav__regis {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 0;
+    gap: .6rem;
+}
+.nav__regis li {
+    list-style-type: none;
+}
+.nav__regis a {
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid #666;
+    padding: 1rem;
+    border-radius: 4px;
+    font-size: .8rem;
+    min-width: 200px;
+}
+.register__hover a{
+    color: #bbb;
+    background: rgb(37, 37, 37);
+    transition: .3s ease-in-out;
+}
+.register__hover a:hover {
+    background: rgb(72, 71, 71);
+}
+.signin__hover a {
+    color: #fc0;
+    border: 1px solid #fb0;
+    background: rgb(72, 57, 1);
+    transition: .4s ease-out;
+}
+.signin__hover a:hover {
+    background: rgb(123, 100, 18);
+    color: #fff;
+}
+.ham__menu {
+    display: none;
+}
+.user__menu {
+    display: none;
+}
+.pointblank-mobile {
+    display: none;
+}
+.colse__user {
+    display: none;
+}
+.close__menu {
+    display: none;
+}
+.pointblank-logo {
+    display: none;
+}
+.bg__fade {
+    display: none;
+}
+.game__bullet {
+    display: none;
+}
+@media only screen and (max-width: 1430px) {
+    .nav__logo {
+        width: 23%;
+    }
+    .nav__menu {
+        padding-left: 1rem;
+    }
+    .nav__menu li a {
+        font-size: 14px;
+    }
+    .nav__dropdown p{
+        display: none;
+    }
+    .nav__drop-item p {
+        display: none;
+    }
+}
+@media only screen and (max-width: 1157px) {
+    .nav__logo {
+        width: 19%;
+    }
+    .nav__menu li a {
+        font-size: 13px;
+    }
+    .nav__right {
+        gap: .3rem;
+    }
+}
+@media only screen and (max-width: 1100px) {
+    .nav__logo {
+        width: 100%;
+        background: transparent;
+    }
+    /* ========================== รอแก้ ================================ */
+    .bg__fade {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .bg__fade.active {
+        display: block;
+        z-index: 3;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+    }
+    /* ========================== รอแก้ ================================ */
+    .nav__menu {
+        position: absolute;
+        z-index: 3;
+        left: -100%;
+        top: 0;
+        height: auto;
+        min-height: 100vh;
+        opacity: 0;
+        flex-direction: column;
+        width: 90vw;
+        overflow: hidden;
+        transition: .5s ease;
+
+    }
+    /* activemenu --------------------------------- */
+    .nav__menu.active {
+        background-color: #000;
+        opacity: 1;
+        left: 0;
+        transition: .5s ease;
+        transition-delay: .2s;
+    }
+    /* activemenu --------------------------------- */
+    .nav__menu li {
+        margin-bottom: 2rem;
+        border-bottom: 1px solid rgb(51, 51, 51);
+        width: 100%;
+        margin-left: 40%;
+        text-align: left;
+        padding-left:2rem;
+        padding-bottom: .4rem;
+    }
+    .nav__menu li a {
+        font-size: 1.7rem;
+        font-weight: lighter;
+    }
+    /* ================ Dropdown Menu Start  *Game* =================== */
+
+
+    /* ========================= สัญญลักษณ์ ============================= */
+    .game__bullet {
+        display: block;
+        font-size: 2rem;
+    }
+    .game__tranfrom {
+        transform: rotate(360deg);
+        transition: .3s ease-out;
+        color: #999;
+    }
+    .game__tranfrom:hover {
+        color: #b00;
+    }
+    /* ========================= สัญญลักษณ์ ============================= */
+    .game__header {
+        display: flex;
+        justify-content: space-between;
+        width: 77%;
+        align-items: center;    /*ตัว Container Navbar ในขนาดหน้าจอของ Mobile*/
+        cursor: pointer;
+    }
+    .dropdown__menu {
+        display: flex;
+        flex-direction: column;
+        align-items: self-start!important; /*ตัว Main Navbar ที่บรรจุ Dropdown อยู่หน้าด้านใน*/
+        overflow: hidden;
+        height: 50px!important;
+        transition: .5s ease;
+    }
+    .dropdown__menu ul {
+        opacity: 0;
+        transition: .4s ease;
+    }
+    .dropdown__menu.active {
+        padding: 0!important;
+        height: 260px!important;    /*เมื่อมีการ Active ให้มาใช้ Class ดังนี้*/
+        transition: .5s ease;
+    }
+    .dropdown__menu.active > .game__header a,
+    .dropdown__menu.active > .game__header .game__tranfrom {    /*เมื่อมีการ Active ให้มาใช้ Class ดังนี้*/
+        color: #b00!important;
+    }
+    .dropdown__menu.active > .game__header .game__bullet .game__tranfrom {
+        transform: rotate(180deg);
+        transition: .3s ease-out;   /*เมื่อมีการ Active ให้มาใช้ Class ดังนี้ ( เป็นการหมุนสัญญลักษณ์เมื่อกด )*/
+    }
+    .dropdown__menu.active ul {
+        opacity: 1;
+        transition: .4s ease;
+    }
+    .dropdown__menu .on__menu {
+        position: relative;
+        display: flex!important;
+        flex-direction: column;     /* Reset ขนาดของ Navในหน้าจอปกติ แล้วตกแต่งให้เหมาะสมในหน้าจอ Mobile */
+        z-index: 3;
+        top: 0;
+        left: 0;
+        gap: 0;
+        padding: 0;
+        width: 100%;
+        background-color: rgb(17, 17, 17);
+        height: auto;
+        margin-top: .4rem;
+        margin-bottom: .2rem;
+    }
+    .dropdown__menu a {
+        cursor: pointer;
+    }
+    .dropdown__menu .on__menu li {
+        border: none;
+        padding: 0;
+        margin-left: 2rem;
+        margin-top: 1rem;
+    }
+    .dropdown__menu .on__menu li a {
+        border: none!important;
+        background: none;
+        width: 100%;
+        height: 0;
+        justify-content: start;
+        align-items: flex-start;
+        font-size: 1.2rem;
+    }
+    .dropdown__menu .on__menu li a img {
+        display: none;
+    }
+    .dropdown__menu .on__menu li a p {
+        margin: 0;
+    }
+    /* ================ Dropdown Menu End *Game* =================== */
+
+    /* ================ Dropdown Menu Start *Rating* =================== */
+    .dropdown__menu {
+        display: flex;
+        flex-direction: column;
+        align-items: self-start!important; /*ตัว Main Navbar ที่บรรจุ Dropdown อยู่หน้าด้านใน*/
+        overflow: hidden;
+        height: 50px!important;
+        transition: .5s ease;
+    }
+    .dropdown__menu.active-rate {
+        padding: 0!important;
+        height: 160px!important;    /*เมื่อมีการ Active ให้มาใช้ Class ดังนี้*/
+        transition: .5s ease;
+    }
+    .dropdown__menu.active-rate > .game__header a,
+    .dropdown__menu.active-rate > .game__header .game__tranfrom {    /*เมื่อมีการ Active ให้มาใช้ Class ดังนี้*/
+        color: #b00!important;
+    }
+    .dropdown__menu.active-rate > .game__header .game__bullet .game__tranfrom {
+        transform: rotate(180deg);
+        transition: .3s ease-out;   /*เมื่อมีการ Active ให้มาใช้ Class ดังนี้ ( เป็นการหมุนสัญญลักษณ์เมื่อกด )*/
+    }
+    .dropdown__menu.active-rate ul {
+        opacity: 1;
+        transition: .4s ease;
+    }
+    /* ================ Dropdown Menu End *Rating* =================== */
+    .ham__menu {
+        display: block;
+        padding: 1rem;
+        cursor: pointer;
+        position: relative;
+        z-index: 2;
+    }
+    .pointblank-logo {
+        display: block;
+        margin: 1rem 0;
+        padding: 1rem;
+        text-align: center;
+    }
+    .pointblank-logo img {
+        width: 60%;
+    }
+    .hambur {
+        width: 100%;
+    }
+    .nav__menu li a::after {
+        display: none;
+    }
+    /* .main__drop-1:hover .on__menu, */
+    /* .main__drop-2:hover .on__menu, */
+    /* .main__drop-3:hover .on__menu, */
+    .main__drop-4:hover .on__menu,
+    .main__drop-5:hover .on__menu {
+        display: none!important;
+    }
+    /* ========================= การจัดการ Contact ในหน้า Mobile =========================  */
+    .close__contact {
+        display: none!important;
+    }
+    .main__drop-3 {
+        border: none!important;
+        margin: 0!important;
+    }
+    .main__drop-3 .on__menu {
+        display: flex!important;
+        top: -100px;
+        flex-direction: column;
+        gap: 0;
+        left: -110px;
+        position: relative;
+        z-index: 4;
+        height: 0!important;
+        width: 20%;
+    }
+    .main__drop-3 .on__menu li {
+        border: none;
+    }
+    .main__drop-3 .on__menu li p {
+        display: none;
+    }
+    /* ========================= การจัดการ Contact ในหน้า Mobile =========================  */
+    .nav__menu .nav__premium:hover {
+        color: #999!important;
+    }
+    .nav__dropdown {
+        display: none;
+    }
+    .nav__right {
+        position: absolute;
+        top: 0;
+        right: -100%;
+        width: 90vw;
+        height: 100vh;
+        opacity: 0;
+        border-left: 8px solid #b00;
+        padding: 0;
+        transition: .5s ease;
+    }
+    .nav__right.active {
+        z-index: 3;
+        background-color: #000;
+        opacity: 1;
+        right: 0;
+        transition: .5s ease;
+        transition-delay: .2s;
+    }
+    .regis {
+        width: 100%;
+        margin-top: 4rem;
+    }
+    
+    .nav__regis {
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 2rem;
+    }
+    .nav__regis li {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .nav__regis li a {
+        padding: 1.2rem 1.8rem;
+        display: block;
+        border-radius: 4px;
+        font-size: 2rem;
+    }
+    .nav__regis .signin__hover a {
+        background-color: #b00;
+        border: 1px solid #b00;
+        color: #fff;
+    }
+    .user__menu {
+        display: block;
+        padding: 1rem;
+        cursor: pointer;
+        position: relative;
+        z-index: 2;
+    }
+    .pointblank-mobile {
+        display: block;
+        text-align: center;
+        padding: .5rem;
+    }
+    .pointblank-mobile img {
+        width: 30%;
+    }
+    .colse__user {
+        display: block;
+        position: absolute;
+        right: 30px;
+        padding: .4rem;
+        top: 10px;
+        cursor: pointer;
+    }
+    .close__menu {
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        left: 27px;
+        top: 20px;
+    }
+    
+}
+@media only screen and (max-width: 768px) {
+    .pointblank-mobile img {
+        width: 35%;
+    }
+    .nav__regis li a {
+        font-size: 1rem;
+    }
+    .main__drop-3 .on__menu li a{
+        width: 78px;
+        height: 78px;
+    }
+    .main__drop-3 .on__menu li img {
+        width: 40%;
+    }
+    .nav__menu li a {
+        font-size: 1.2rem;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .pointblank-mobile img {
+        width: 40%;
+    }
+    .nav__menu li a {
+        font-size: 1rem;
+    }
+}

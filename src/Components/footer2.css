@@ -1,0 +1,36 @@
+:root {
+    --foot2-color2: #666;
+    --foot2-contact: #888;
+    --foot2-bg: #000;
+}
+.foot2__bg {
+    background: var(--foot2-bg);
+    height: auto;
+}
+.foot2__main {
+    padding: 4rem 1rem;
+    text-align: center;
+}
+.foot2-top {
+    margin-bottom: 1rem;
+}
+.foot2-bottom {
+    color: var(--foot2-color2);
+}
+.foot2-bottom p {
+    margin: 0;
+}
+.foot2-bottom p > a {
+    text-decoration: none;
+    color: var(--foot2-contact);
+    transition: all .3s ease;
+}
+.foot2-bottom p > a:hover {
+    color: #ffffff;
+}
+.foot2-bottom p:first-child {
+    font-size: 17px;
+}
+.foot2-bottom p:last-child {
+    font-size: 13px;
+}

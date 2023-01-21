@@ -1,0 +1,75 @@
+.main__bg {
+    background-image: url(../../public/image-visual/bg-visual.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+    overflow: hidden;
+}
+.caro__main {
+    margin: 0 auto;
+    max-width: 900px;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    margin-top: 5rem;
+}
+.carousel-layout {
+    height: 700px;
+    padding: 0 .4rem;
+}
+.caro__inner {
+    white-space: nowrap;
+    transition: 1s ease;
+}
+.caro__item {
+    display: inline-block;
+    width: 100%;
+}
+.caro__item img{
+    display: inline-block;
+    width: 100%;
+}
+/* ====================== Carousel controls =================== */
+.carousel-control {
+    background-color: rgba(0, 0, 0, .5);
+    border: none;
+    display: inline-block;
+    position: absolute;
+    height: 50px;
+    width: 70px;
+    top: calc(50% - 25px);
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+}
+.left {
+    left: 0;
+}
+.right {
+    right: 0;
+}
+/* ====================== Carousel controls =================== */
+
+/* ================= Carousel Indicators ===================== */
+.carousel-indicators {
+    position: absolute;
+    transform: translateX(-120%);
+    left: 50%;
+    z-index: 2;
+    /* border: 1px solid red; */
+}
+.carousel-indicator-item {
+    width: 15px;
+    height: 15px;
+    border: none;
+    background: #fff;
+    opacity: .5;
+    margin: 0.2rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.carousel-indicator-item.active {
+    opacity: 1;
+}
+/* ================= Carousel Indicators ===================== */
